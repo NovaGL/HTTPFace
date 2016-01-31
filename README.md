@@ -1,2 +1,4 @@
 # HTTPFace
-Pebble Watch App with discrete HTTP Functions
+Pebble Watch App with discrete HTTP Functions.
+
+Work in progress .....

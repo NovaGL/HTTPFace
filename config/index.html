@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTTP Face Configuration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='css/slate.min.css'>
+ <script src='js/slate.min.js'></script>
+  <style>
+  .title {
+    padding: 15px 10px;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #888888;
+    text-align: center;
+  }
+  </style>
+    <!-- add extra css! -->
+
+    
+  </head>
+  <body>
+
+
+<h1 class='title'>HTTP-Face Configuration</h1>
+
+    <div class='item-container'>
+      <div class='item-container-content'>
+        <div class='item'>
+          Use this configuration page to choose the settings you would like applied to this app.
+        </div>
+      </div>
+    </div>
+<form role="form" onsubmit="complete()" action="javascript:void(0);">
+    <div class='item-container'>
+      <div class='item-container-header'>Watch Button URLs</div>
+      <div class="item-container-content">
+    	<label class="item">
+      	  <div class="item-input-wrapper">
+		<input type="text" class="item-input" name="Up" placeholder="Enter URL for UP Button Press">
+	   </div>
+	 </label>
+	<label class="item">
+      	  <div class="item-input-wrapper">
+		<input type="text" class="item-input" name="LongUp" placeholder="Enter URL for Long UP Button Press">
+	   </div>
+	 </label>
+<label class="item">
+      	  <div class="item-input-wrapper">
+		<input type="text" class="item-input" name="Select" placeholder="Enter URL for Select Button Press">
+	   </div>
+	 </label>
+<label class="item">
+      	  <div class="item-input-wrapper">
+		<input type="text" class="item-input" name="LongSelect" placeholder="Enter URL for Long Select Button Press">
+	   </div>
+	 </label>
+<label class="item">
+      	  <div class="item-input-wrapper">
+		<input type="text" class="item-input" name="Down" placeholder="Enter URL for Down Button Press">
+	   </div>
+	 </label>
+<label class="item">
+      	  <div class="item-input-wrapper">
+		<input type="text" class="item-input" name="LongDown" placeholder="Enter URL for Long Down Button Press">
+	   </div>
+	 </label>
+  	</div>
+      <div class='item-container-footer'>
+        Choose the URLs you would like for each button press </div>
+    </div>
+
+<div class="item-container">
+  <div class="button-container">
+    <input type="submit" class="item-button" value="SEND">
+  </div>
+</div>
+                
+                             </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  function complete() {
+    var o = {};
+    $.each($('form').serializeArray(), function() {
+        o[this.name] = this.value;
+    });
+    window.location.href="pebblejs://close#" + JSON.stringify(o);
+    return false
+  }
+</script>
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+    <script src="http://sinatra-heroku-boilerplate.s3.amazonaws.com/public/vendor/retina.js"></script>
+    
+    
+
+    
+  </body>
+</html>
