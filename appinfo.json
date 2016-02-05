@@ -1,0 +1,33 @@
+{
+    "appKeys": {
+        "Down": 5,
+        "LongDown": 6,
+        "LongSelect": 4,
+        "LongUp": 2,
+        "Select": 3,
+        "Up": 1,
+        "message": 0
+    },
+    "capabilities": [
+        "configurable"
+    ],
+    "companyName": "NovaG",
+    "enableMultiJS": false,
+    "longName": "HTTPFace (Beta)",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "HTTPFace (Beta)",
+    "targetPlatforms": [
+        "aplite",
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "791e32c4-e4bc-45bb-b62a-d3da2dc33458",
+    "versionLabel": "0.1",
+    "watchapp": {
+        "watchface": false
+    }
+}
